@@ -11,10 +11,89 @@
         <!--Tic Tac Toe Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="TicTacToeInterfaceController" customModule="TicTacToeWatch_Extension">
+                <controller spacing="4" id="AgC-eL-Hgc" customClass="TicTacToeInterfaceController" customModule="TicTacToeWatch_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="pPt-aK-D9U"/>
+                        <group width="1" alignment="left" id="Oee-KN-uzy">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Player X's Turn" id="HEP-L9-6SM"/>
+                                <button width="60" alignment="right" title="Reset" id="dRy-KW-G4M">
+                                    <connections>
+                                        <action selector="resetGame" destination="AgC-eL-Hgc" id="F7m-Qm-hgF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="center" contentMode="scaleAspectFit" id="pPt-aK-D9U">
+                            <items>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="9y1-Ap-LVa">
+                                    <connections>
+                                        <action selector="firstXOTap" destination="AgC-eL-Hgc" id="dnI-gi-fwr"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="sUL-Kt-jpe">
+                                    <connections>
+                                        <action selector="secondXOTap" destination="AgC-eL-Hgc" id="aVe-VZ-WXj"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="byF-e0-mnF">
+                                    <connections>
+                                        <action selector="thirdXOTap" destination="AgC-eL-Hgc" id="mbm-ut-KFd"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="center" contentMode="scaleAspectFit" id="C5Z-pI-Gvf">
+                            <items>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="024-V8-Tac">
+                                    <connections>
+                                        <action selector="fourthXOTap" destination="AgC-eL-Hgc" id="uaO-s8-gBD"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="1bf-Ga-WEa">
+                                    <connections>
+                                        <action selector="fifthXOTap" destination="AgC-eL-Hgc" id="bKF-cQ-CcH"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="fBE-u7-fVY">
+                                    <connections>
+                                        <action selector="sixthXOTap" destination="AgC-eL-Hgc" id="7cB-J3-auZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="center" contentMode="scaleAspectFit" id="ebc-3D-LzE">
+                            <items>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="JKs-kv-Rn6">
+                                    <connections>
+                                        <action selector="seventhXOTap" destination="AgC-eL-Hgc" id="87G-bS-NMs"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="aj6-3c-NlF">
+                                    <connections>
+                                        <action selector="eighthXOTap" destination="AgC-eL-Hgc" id="e57-PF-wUW"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34000000000000002" height="50" alignment="left" title="X" id="6V5-Md-NGX">
+                                    <connections>
+                                        <action selector="ninthXOTap" destination="AgC-eL-Hgc" id="fwk-0E-fvm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="eighthXOOutlet" destination="aj6-3c-NlF" id="4Gq-xO-00c"/>
+                        <outlet property="fifthXOOutlet" destination="1bf-Ga-WEa" id="nVD-89-5Iu"/>
+                        <outlet property="firstXOOutlet" destination="9y1-Ap-LVa" id="xNr-yA-Dzu"/>
+                        <outlet property="fourthXOOutlet" destination="024-V8-Tac" id="HjF-9N-Ghj"/>
+                        <outlet property="ninthXOOutlet" destination="6V5-Md-NGX" id="Jbf-fL-Eiw"/>
+                        <outlet property="playerXOLabel" destination="HEP-L9-6SM" id="hhN-YW-eFe"/>
+                        <outlet property="reset" destination="dRy-KW-G4M" id="HjP-Yz-YDg"/>
+                        <outlet property="secondXOOutlet" destination="sUL-Kt-jpe" id="WeZ-rg-5Iq"/>
+                        <outlet property="seventhXOOutlet" destination="JKs-kv-Rn6" id="yfQ-ps-9QQ"/>
+                        <outlet property="sixthXOOutlet" destination="fBE-u7-fVY" id="oGq-TM-9fC"/>
+                        <outlet property="thirdXOOutlet" destination="byF-e0-mnF" id="hyE-dI-xiL"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-88" y="31.5"/>
